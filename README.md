@@ -6,7 +6,7 @@
 Código en **Python3** que usa [PIL](https://github.com/python-pillow/Pillow) para convertir **y redimensionar** todas las imágenes JPG de una carpeta (*nombre_carpeta*) a imágenes PNG. 
 Estas imágenes se guardan en una carpeta con terminación _PNG-output (*nombre_carpeta_PNG-output*).
 
-Además a las imágenes PNG se les agrega un texto como metadato. En este caso es "github.com/juanmx".
+Además a las imágenes PNG se les agrega un texto como metadato tipo [Image.info](https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.info). En este caso es "Imagen convertida y redimensionada con codigo obtenido de github.com/JuanMX/jpg2png".
 
 ## Decargar el proyecto, crear un entorno virtual e instalar las dependencias
 
@@ -88,7 +88,7 @@ El resultado es una carpeta `imgs_PNG-output` con las imágenes PNG de tamaño 1
 **Python3** source code. It uses [PIL](https://github.com/python-pillow/Pillow) in order to convert **and resize** all JPG images from certain directory (*directory_name*).
 The output PNG images are stored in other directory with *_PNG-output* termination (*directory_name_PNG-output*).
 
-Also a text metadata is appended to the output PNG images. In this case is "github.com/juanmx".
+Also a text metadata type [Image.info](https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.info) is appended to the output PNG images. In this case is "Imagen convertida y redimensionada con codigo obtenido de github.com/JuanMX/jpg2png".
 
 ## Download the project, create a virtual enviroment and install the dependencies
 

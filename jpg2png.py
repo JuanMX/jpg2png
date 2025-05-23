@@ -3,7 +3,7 @@ import sys
 from PIL import Image, PngImagePlugin
 
 def jpg2png(directory, width, height):
-    png_text = 'github.com/juanmx'
+    png_text = 'Imagen convertida y redimensionada con codigo obtenido de github.com/JuanMX/jpg2png'
 
     for img_name in os.listdir(directory):
         im = Image.open('./'+directory+'/'+img_name)
@@ -19,7 +19,7 @@ def jpg2png(directory, width, height):
 
         im_resized.save('./'+directory + output_directory_ends_with + '/' + img_name[:-4] + ".png", pnginfo=png_metadata)
         im.close()
-        print("saved " + img_name[:-4] + ".png")
+        print("Converted:   " + img_name + "   Saved as:   " + img_name[:-4] + ".png")
 
 
 def main():
@@ -43,7 +43,7 @@ def main():
         resize_height  = int(args[4])
     else:
         print("Source file needs to be executed like this: ")
-        print("jpg2png.py -directory directory_name -resize 1024 768")
+        print("   > python jpg2png.py -directory directory_name -resize 1024 768")
         print("The directory_name and this source code need to be in the same place")
         exit(1)
     if (os.path.isdir(work_directory) == False):
